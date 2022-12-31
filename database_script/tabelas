@@ -1,0 +1,23 @@
+CREATE TABLE tblinscricao(
+	  CODIGO_INSCRICAO int AUTO_INCREMENT,
+	  PAGAMENTO  varchar(3) default 'não',
+	  CPF_PARTICIPANTE  varchar(15),
+	  NOME_PARTICIPANTE  varchar(200),
+	  DATA_INSCRICAO  TIMESTAMP,
+	  PRIMARY KEY (CODIGO_INSCRICAO)
+ );
+  
+  CREATE TABLE tbleventos(
+   CODIGO_EVENTO  int AUTO_INCREMENT,
+   NOME_EVENTO 	 varchar(50) NOT NULL,
+   DESCRICAO_EVENTO varchar(200),
+   VALOR_EVENTO 	 numeric(10,2),
+   DATA_EVENTO date NOT NULL,
+   PRIMARY KEY(CODIGO_EVENTO)
+
+  );
+
+
+   ALTER TABLE ustart.tbleventos ADD CARGA_HORARIA time NULL;
+
+ 

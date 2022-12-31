@@ -1,0 +1,18 @@
+
+# Chama o 404
+# Liga o Rewrite - Redireciona para o index
+RewriteEngine on 
+
+# Determina que o rewrite só se aplicará se nao (!) existir um arquivo (-f) com aquele nome
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.*)$ ./index.php [QSA,NC]
+
+# RewriteCond:
+# Voce deve usar a diretiva para adicionar condições 
+# para aplicar ou não o redirecionamento.
+
+
+# RewriteRule:
+# Faz a reescrita do URL, 
+# e se ocorrer mais de uma vez, 
+# é aplicada na ordem sequencial do arquivo.

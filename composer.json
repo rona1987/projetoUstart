@@ -1,0 +1,11 @@
+{
+    "autoload":{
+        "psr-4":{
+            "App\\":"app/"
+        }
+    },
+    "require": {
+        "u-start/dot-env": "^0.1.0",
+        "william-costa/database-manager": "^0.1.0"
+    }
+}
